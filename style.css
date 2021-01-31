@@ -1,0 +1,120 @@
+body{
+    background-image: linear-gradient( 120deg, #f0e5d8, #bbdfc8);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+header{
+    font-size: 25px;
+}
+
+header, form{
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, 
+form button{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #f8f1f1;
+}
+form button{
+    color: #a3d2ca;
+    background-color:#f8f1f1;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    color: #fff;
+    background-color: #a3d2ca;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+   min-width: 35%;
+   list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background-color: white;
+    color: #000;
+    font-size: 11px;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    transition: all 1.2s ease;
+}
+.todo li{
+    flex: 1;
+}
+.compleceted-btn, .trash-btn{
+    background: #a3d2ca;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+.trash-btn{
+    background: #ee99a0;
+    transition: all 0.3s ease
+}
+.trash-btn:hover{
+    background: white;
+    color: #ee99a0;
+}
+.compleceted-btn{
+    background: #75cfb8;
+    transition: all 0.3s ease
+}
+.compleceted-btn:hover{
+    color:  #75cfb8;
+    background: #fff;
+}
+.todo-item{
+    padding: 0.5rem;
+}
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg) ;
+    opacity: 0;
+}
+select{
+color: #3e4344;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+outline: none;
+box-shadow: none;
+border:1px solid #a0c1b8;
+width: 10rem;
+cursor: pointer;
+height: 2.3rem;
+padding: 5px;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.select::after{
+    content: "\25BC" ;
+    position: absolute;
+    background-color: #a3d2ca;
+    top:-8px;
+    right: 0px;   
+    padding: 1rem;
+    pointer-events: none;
+    opacity: 0.5;
+}
